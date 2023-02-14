@@ -48,15 +48,18 @@ img {
     /* background-image: url(svg/level_complete.svg);
   background-size: cover; */
 }
+
 #game_background {
     width: 100%;
     height: 100%;
     position: absolute;
     top: 0%;
     left: 0%;
-    background-image: url(svg/baggrund.svg);
+    background-image: url("Billeder/background-image.jpg");
     background-size: cover;
-}
+}    
+/*
+
 #game_elements {
     width: 100%;
     height: 100%;
@@ -64,6 +67,9 @@ img {
     top: 0%;
     left: 0%;
 }
+*/
+
+/*
 #game_foreground {
     width: 100%;
     height: 100%;
@@ -73,6 +79,8 @@ img {
     background-image: url(svg/forgrund.svg);
     background-size: cover;
 }
+*/
+
 #game_ui {
     width: 100%;
     height: 100%;
@@ -83,52 +91,64 @@ img {
 
 /* spil elementer */
 
-#carljohan_container1 {
+#emergency-kit_container {
     width: 13%;
     position: absolute;
     top: 18%;
     left: 37%;
 }
 
-#carljohan_sprite1 {
+#emergency-kit_sprite{
     width: 100%;
     height: 100%;
 }
 
-#carljohan_container2 {
-    width: 11%;
+#paratroopers_container {
+    width: 5%;
     position: absolute;
-    top: 72%;
-    left: 73%;
+    top: 25%;
+    left: 25%;
 }
 
-#carljohan_sprite2 {
+#paratroopers_sprite {
     width: 100%;
     height: 100%;
-    background-image: url(svg/carljohan_r.svg);
-    background-size: cover;
+    /*background-image: url("Billeder/background picture.jpg");
+    background-size:cover;*/
 }
 
-#fluesvamp_container {
+#uk-eu-containers_container {
     width: 17%;
     position: absolute;
-    top: 44%;
-    left: 48%;
+    top: 50%;
+    left: 35%;
 }
 
-#fluesvamp_sprite {
+#uk-eu-containers_sprite {
     width: 100%;
     height: 100%;
 }
 
-#stinksvamp_container {
+#ukrainian-flag_container {
     width: 20%;
     position: absolute;
     top: 18%;
     left: 18%;
 }
 
-#stinksvamp_sprite {
+#ukrainian-flag_sprite {
+    width: 100%;
+    height: 100%;
+}
+
+#us-canada-containers_container {
+    width: 17%;
+    position: absolute;
+    top: 35%;
+    left: 50%;
+}
+
+#us-canada-containers_sprite {
     width: 100%;
     height: 100%;
 }
