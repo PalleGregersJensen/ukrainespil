@@ -98,16 +98,29 @@ img {
     left: 37%;
 }
 
-#emergency-kit_sprite{
+#emergency-kit_sprite {
     width: 100%;
     height: 100%;
 }
 
-#paratroopers_container {
-    width: 5%;
+#missile_container {
+    width: 13%;
     position: absolute;
-    top: 25%;
-    left: 25%;
+    top: 38%;
+    left: 27%;
+}
+
+#missile_sprite {
+    width: 100%;
+    height: 100%;
+}
+
+
+#paratroopers_container {
+    width: 10%;
+    position: absolute;
+    top: 50%;
+    left: 5%;
 }
 
 #paratroopers_sprite {
@@ -116,7 +129,7 @@ img {
     /*background-image: url("Billeder/background picture.jpg");
     background-size:cover;*/
 }
-
+ 
 #uk-eu-containers_container {
     width: 17%;
     position: absolute;
