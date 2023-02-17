@@ -1,64 +1,63 @@
 body {
-    margin: 0;
+  margin: 0;
 }
 
 img {
-    width: 100%;
+  width: 100%;
 }
 
 #screen {
-    position: relative;
-    width: 100%;
-    aspect-ratio: 16/9;
-    
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16/9;
 }
 #game {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0%;
-    left: 0%;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0%;
+  left: 0%;
 }
 #start {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0%;
-    left: 0%;
-    /* udkommenteret da der  ikke er et billede */
-    /* background-image: url(svg/start.svg);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  /* udkommenteret da der  ikke er et billede */
+  /* background-image: url(svg/start.svg);
   background-size: cover; */
 }
 #game_over {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0%;
-    left: 0%;
-    /* udkommenteret da der  ikke er et billede */
-    /* background-image: url(svg/game_over.svg);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  /* udkommenteret da der  ikke er et billede */
+  /* background-image: url(svg/game_over.svg);
   background-size: cover; */
 }
 #level_complete {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0%;
-    left: 0%;
-    /* udkommenteret da der  ikke er et billede */
-    /* background-image: url(svg/level_complete.svg);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  /* udkommenteret da der  ikke er et billede */
+  /* background-image: url(svg/level_complete.svg);
   background-size: cover; */
 }
 
 #game_background {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0%;
-    left: 0%;
-    background-image: url("Billeder/background-image.jpg");
-    background-size: cover;
-}    
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  background-image: url("Billeder/background-image.png");
+  background-size: cover;
+}
 /*
 
 #game_elements {
@@ -83,106 +82,187 @@ img {
 */
 
 #game_ui {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0%;
-    left: 0%;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0%;
+  left: 0%;
 }
 
 /* spil elementer */
 
 #emergency-kit_container {
-    width: 13%;
-    position: absolute;
-    top: 18%;
-    left: 37%;
+  width: 13%;
+  position: absolute;
+  top: 18%;
+  left: 37%;
+  border-radius: 10%;
+  border-color: black;
 }
 
 #emergency-kit_sprite {
-    width: 100%;
-    height: 100%;
+  width: 100%;
+  height: 100%;
 }
 
 #missile_container {
-    width: 13%;
-    position: absolute;
-    top: 38%;
-    left: 27%;
+  width: 5%;
+  position: absolute;
+  top: 38%;
+  left: 30%;
+  rotate: 135deg;
 }
 
 #missile_sprite {
-    width: 100%;
-    height: 100%;
+  width: 100%;
+  height: 100%;
 }
 
-
 #paratroopers_container {
-    width: 10%;
-    position: absolute;
-    top: 50%;
-    left: 5%;
+  width: 10%;
+  position: absolute;
+  top: 50%;
+  left: 5%;
 }
 
 #paratroopers_sprite {
-    width: 100%;
-    height: 100%;
-    /*background-image: url("Billeder/background picture.jpg");
+  width: 100%;
+  height: 100%;
+  /*background-image: url("Billeder/background picture.jpg");
     background-size:cover;*/
 }
- 
+
 #uk-eu-containers_container {
-    width: 17%;
-    position: absolute;
-    top: 50%;
-    left: 35%;
+  width: 17%;
+  position: absolute;
+  top: 50%;
+  left: 35%;
 }
 
 #uk-eu-containers_sprite {
-    width: 100%;
-    height: 100%;
+  width: 100%;
+  height: 100%;
 }
 
 #ukrainian-flag_container {
-    width: 20%;
-    position: absolute;
-    top: 18%;
-    left: 18%;
+  width: 20%;
+  position: absolute;
+  top: 18%;
+  left: 18%;
 }
 
 #ukrainian-flag_sprite {
-    width: 100%;
-    height: 100%;
+  width: 100%;
+  height: 100%;
 }
 
 #us-canada-containers_container {
-    width: 17%;
-    position: absolute;
-    top: 35%;
-    left: 50%;
+  width: 17%;
+  position: absolute;
+  top: 35%;
+  left: 50%;
 }
 
 #us-canada-containers_sprite {
-    width: 100%;
-    height: 100%;
+  width: 100%;
+  height: 100%;
 }
 
 /* ui-elementer */
 #time_board {
-    width: 5.6%;
-    position: absolute;
-    top: 66.5%;
-    left: 4%;
+  width: 5.6%;
+  position: absolute;
+  top: 66.5%;
+  left: 4%;
 }
 #score_board {
-    width: 23%;
-    position: absolute;
-    top: 69%;
-    left: 11%;
+  width: 23%;
+  position: absolute;
+  top: 69%;
+  left: 11%;
 }
 #energy_board {
-    width: 26%;
-    position: absolute;
-    top: 83%;
-    left: 3%;
+  width: 26%;
+  position: absolute;
+  top: 83%;
+  left: 3%;
 }
+
+/* animationer*/
+.falling {
+  animation-name: falling;
+  animation-duration: 10s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes falling {
+  0% {
+    transform: translate(0, -300%);
+  }
+
+  100% {
+    transform: translate(0, 300%);
+  }
+}
+
+.falling-fast {
+  animation-name: falling-fast;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes falling-fast {
+  0% {
+    transform: translate(0, -300%);
+  }
+
+  100% {
+    transform: translate(0, 300%);
+  }
+}
+
+
+.falling-diagonal {
+  animation-name: falling-diagonal;
+  animation-duration: 10s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes falling-diagonal {
+  0% {
+    transform: translate(300%, 300%);
+  }
+
+  100% {
+    transform: translate(0%, 0%);
+  }
+}
+
+
+.zoom-out {
+  animation-name: zoom-out;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
+}
+
+@keyframes zoom-out {
+  0% {
+    transform: scale(1, 1);
+  }
+
+  50% {
+    transform: scale(0.5, 0.5);
+  }
+
+  100% {
+    transform: scale(0, 0);
+  }
+}
+
+.animat
