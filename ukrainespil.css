@@ -265,4 +265,7 @@ img {
   }
 }
 
-.animat
+.animation-paused {
+  animation-name: paused;
+  animation-play-state: paused;
+}
