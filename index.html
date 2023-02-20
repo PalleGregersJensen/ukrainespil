@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Ukrainespillet</title>
-  <link rel="stylesheet" href="ukrainespil.css" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
@@ -14,23 +14,23 @@
     <div id="game">
       <div id="game_background"></div>
       <div id="game_elements">
-        <div id="paratroopers_container">
-          <img id="paratroopers_sprite" class="falling-fast" class="falling" class="paused" src="Billeder/paratrooper.png" alt="Faldskærmstropper">
+        <div id="paratroopers_container" class="falling">
+          <img id="paratroopers_sprite" src="Billeder/paratrooper.png" alt="Faldskærmstropper">
         </div>
-        <div id="emergency-kit_container"> 
-          <img id="emergency-kit_sprite" class="falling" class="zoom-out" class="paused" src="Billeder/emergency-kit.png" alt="emergency kit">
+        <div id="emergency-kit_container" class="falling"> 
+          <img id="emergency-kit_sprite" src="Billeder/emergency-kit.png" alt="emergency kit">
         </div>
         <div id="ukrainian-flag_container">
           <img id_="ukrainian-flag_sprite" src="Billeder/ukrainian-flag.png" alt="Ukrainian flag">
         </div>
-        <div id="uk-eu-containers_container">
-          <img id_="uk-eu-containers_sprite" class="falling" class="paused" class="paused" class="zoom-out" src="Billeder/uk-eu-containers.png" alt="uk-eu-containers">
+        <div id="uk-eu-containers_container" class="falling">
+          <img id_="uk-eu-containers_sprite" src="Billeder/uk-eu-containers.png" alt="uk-eu-containers">
         </div>
-        <div id="us-canada-containers_container">
-          <img id_="us-canada-containers_sprite" class="falling" class="zoom-out" class="paused" src="Billeder/us-canada-conmtainers.png" alt="us-canada-conmtainers">
+        <div id="us-canada-containers_container" class="falling">
+          <img id_="us-canada-containers_sprite" src="Billeder/us-canada-conmtainers.png" alt="us-canada-conmtainers">
         </div>
-        <div id="missile_container">
-          <img id_="missile_sprite" class="falling-diagonal" class="zoom-out" src="Billeder/missile.png" alt="missile">
+        <div id="missile_container" class="falling-diagonal">
+          <img id_="missile_sprite" src="Billeder/missile.png" alt="missile">
         </div>  
       </div>    
           <div id="game_foreground"></div>
@@ -45,6 +45,7 @@
     <div id="game_over"></div>
     <div id="level_complete"></div>
   </div>
+   <script src="app.js"></script>
 </body>
 
 </html>
