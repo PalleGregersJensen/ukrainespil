@@ -93,9 +93,19 @@ img {
 
 /* spil elementer */
 
+/*#missile_container, 
+  position: relative;
+  display: inline-block;
+  visibility: visible;
+  opacity: 1;*/
+  
+
 #emergency-kit_container {
+  position: relative;
+  display: inline-block;
+  visibility: visible;
+  opacity: 1;
   width: 13%;
-  position: absolute;
   top: 0%;
   left: 37%;
   border-radius: 10%;
@@ -113,6 +123,11 @@ img {
   top: 0%;
   left: 0%;
   rotate: 135deg;
+  position: relative;
+  display: inline-block;
+  visibility: visible;
+  opacity: 1;
+
 }
 
 #missile_sprite {
@@ -181,13 +196,13 @@ img {
   width: 23%;
   position: absolute;
   top: 69%;
-  left: 11%;
+  left: 12%;
 }
-#energy_board {
-  width: 26%;
+#life_board {
+  width: 6%;
   position: absolute;
-  top: 83%;
-  left: 3%;
+  top: 3%;
+  left: 83%;
 }
 
 /* animationer*/
@@ -239,7 +254,7 @@ img {
   }
 
   100% {
-    transform: translate(-300%, -300%);
+    transform: translate(-300%, -500%);
   }
 }
 
