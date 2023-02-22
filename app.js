@@ -69,18 +69,71 @@ function clickMissile(event) {
       .querySelector("#missile_container")
       .addEventListener("click", clickMissile);
   }
+}
 
- // function clickEmergencyKit(event) {
- //   console.log("Click emergencyKit");
+
+  function clickEmergencyKit () {
+    console.log("Click emergencykit");
     // Forhindr gentagne clicks
- //   document
- //     .querySelector("#emergency-kit_container")
- //     .removeEventListener("click", clickEmergencyKit);
+    document
+      .querySelector("#emergency-kit_container")
+      .removeEventListener("click", clickEmergencyKit);
 
-    // Stop coin container
+    // Stop missil-container
+    document.querySelector("#emergency-kit_container").classList.add("paused");
+
+    // sæt forsvind-animation på missil
+    document.querySelector("#emergency-kit_sprite").classList.add("zoom-out");
+
+    // når forsvind-animation er færdig: missileGone
+    document
+      .querySelector("#emergency-kit_container")
+      .addEventListener("animationend", missileGone);
+    //incrementPoints();
+
+    function missileGone() {
+      // fjern event der bringer os herind
+      document
+        .querySelector("#emergency-kit_container")
+        .removeEventListener("animationend", missileGone);
+
+      // fjern forsvind-animation
+      document
+        .querySelector("#emergency-kit_sprite")
+        .classList.remove("zoom-out");
+
+      // fjern pause
+      document
+        .querySelector("#emergency-kit_container")
+        .classList.remove("paused");
+
+      // genstart falling animation
+      document
+        .querySelector("#emergency-kit_container")
+        .classList.remove("falling");
+      document.querySelector("#emergency-kit_container").offsetWidth;
+
+      document
+        .querySelector("#emergency-kit_container")
+        .classList.add("falling");
+
+      // gør det muligt at klikke på emergency-kit igen
+      document
+        .querySelector("#emergency-kit_container")
+        .addEventListener("click", clickEmergencyKit);
+    }
+
+    //function clickEmergencyKit(event) {
+    //  console.log("click mergencyKit");
+    // Forhindr gentagne clicks
+    //  document
+    //     .querySelector("#emergency-kit_container")
+    //     .removeEventListener("click", clickEmergencyKit);
+
+    // Stop emergency-kit-container
     //  document.querySelector("#emergency-kit_container").classList.add("paused");
 
-    // sæt forsvind-animation på coin
+    // sæt forsvind-animation på emergency-kit
     //  document.querySelector("#emergency-kit_sprite").classList.add("zoom-out");
 
     // når forsvind-animation er færdig: coinGone
@@ -89,63 +142,65 @@ function clickMissile(event) {
     //    .addEventListener("animationend", emergency-kitGone);
 
     //  decrementLives();
+    //}
+
+    //function start() {
+    //console.log("start");
+    //document.querySelector("#missile_container").classList.add("falling-diagonal");
+    //document.querySelector("#missile_sprite").addEventListener("click", zoom_out);
+
+    //function zoom_out() {
+    //console.log("zoom_out");
+    //document.querySelector("#missile_container").classList.add("paused");
+    //document.querySelector("#missile_sprite").classList.add("zoom-out");
+
+    //function start() {
+    //console.log("start");
+    //document.querySelector("#missile_container").classList.add("falling-diagonal");
+    //document.querySelector("#missile_container").addEventListener("click", clickMissile);
+
+    //function clickMissile() {
+    //document.querySelector("#missile_container").classList.add("paused");
+    //document.querySelector("#missile_sprite").classList.add("zoom-out");
+
+    // Start animationer
+    //{
+    //document.querySelector("#missile_container").classList.add("falling-diagonal");
+    //document.querySelector("#emergency-kit_container").classList.add("falling");
+
+    // Registrer click
+    //document.querySelector("#emergency-kit_container").addEventListener("click", clickEmergencyKit);
+    //document.querySelector("#missile_container").addEventListener("click", clickMissile);
+    //}
+
+    //function clickMissile() {
+    //console.log("clickMissile");
+    //document.querySelector("#missile_container").add("zoom-out");
+
+    //function clickEmergencyKit() {
+    //console.log("clickEmergencyKit");
+
+    // Forhindr gentagne clicks
+    //document.querySelector("#missile_container").removeEventListener("click", clickMissile);
+
+    // Stop coin container
+    //function clickMissile()
+    //document.querySelector("#missile_container").classList.add("paused");
+    //document.querySelector("#missile_sprite").classList.add("zoom-out");
+    // sæt forsvind-animation på coin
+
+    // når forsvind-animation er færdig: coinGone
+    //document
+    // .querySelector("#missile_container").addEventListener("animationend", coinGone);
+    //incrementPoints();
+
+    //}
+    // Stop coin container
+    //  document.querySelector("#coin1_container").classList.add("paused");
+
+    // sæt forsvind-animation på coin
+    //document.querySelector("#coin1_sprite").classList.add("zoom_out");
+    //
+    //}
   }
-
-  //function start() {
-  //console.log("start");
-  //document.querySelector("#missile_container").classList.add("falling-diagonal");
-  //document.querySelector("#missile_sprite").addEventListener("click", zoom_out);
-
-  //function zoom_out() {
-  //console.log("zoom_out");
-  //document.querySelector("#missile_container").classList.add("paused");
-  //document.querySelector("#missile_sprite").classList.add("zoom-out");
-
-  //function start() {
-  //console.log("start");
-  //document.querySelector("#missile_container").classList.add("falling-diagonal");
-  //document.querySelector("#missile_container").addEventListener("click", clickMissile);
-
-  //function clickMissile() {
-  //document.querySelector("#missile_container").classList.add("paused");
-  //document.querySelector("#missile_sprite").classList.add("zoom-out");
-
-  // Start animationer
-  //{
-  //document.querySelector("#missile_container").classList.add("falling-diagonal");
-  //document.querySelector("#emergency-kit_container").classList.add("falling");
-
-  // Registrer click
-  //document.querySelector("#emergency-kit_container").addEventListener("click", clickEmergencyKit);
-  //document.querySelector("#missile_container").addEventListener("click", clickMissile);
-  //}
-
-  //function clickMissile() {
-  //console.log("clickMissile");
-  //document.querySelector("#missile_container").add("zoom-out");
-
-  //function clickEmergencyKit() {
-  //console.log("clickEmergencyKit");
-
-  // Forhindr gentagne clicks
-  //document.querySelector("#missile_container").removeEventListener("click", clickMissile);
-
-  // Stop coin container
-  //function clickMissile()
-  //document.querySelector("#missile_container").classList.add("paused");
-  //document.querySelector("#missile_sprite").classList.add("zoom-out");
-  // sæt forsvind-animation på coin
-
-  // når forsvind-animation er færdig: coinGone
-  //document
-  // .querySelector("#missile_container").addEventListener("animationend", coinGone);
-  //incrementPoints();
-
-  //}
-  // Stop coin container
-  //  document.querySelector("#coin1_container").classList.add("paused");
-
-  // sæt forsvind-animation på coin
-  //document.querySelector("#coin1_sprite").classList.add("zoom_out");
-  //
 
